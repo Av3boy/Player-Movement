@@ -1,6 +1,6 @@
 # FPS Player Controllers
 
-This project contains different types of implementatinos for FPS player controllers.
+This repository contains different types of FPS player controller implementations.
 
 ## Table of Contents
 
@@ -13,6 +13,8 @@ This project contains different types of implementatinos for FPS player controll
         - [Rigid Body - Add Force](#rigid-body---add-force)
         - [Rigid Body - Velocity](#rigid-body---velocity)
     - [Transform  Component](#transform-component)
+- [Releases](#releases) 
+- [Contribution](#contribution)
 
 ## Project Structure
 
@@ -48,6 +50,8 @@ NOTE: This implementation does not provide gravity out-of-the-box.
 
 ### Input System
 
+[Input System latest release]()
+
 TODO:
 
 ### Rigid Body Controllers
@@ -59,12 +63,14 @@ Read more about [Rigidbody]()
 #### Rigid Body - Add Force
 
 [Rigidbody.AddForce() official documentation]()
+[Rigidbody - AddForce implementation latest release]()
 
 As the name of the implementation suggests, each frame the forces are summed from the input of te current frame to the existing force, which leads the player to accelerating if button is pushed down.
 
 #### Rigid Body - velocity
 
 [Rigidbody.velocity official documentation]()
+[Rigidbody - velocity implementation latest release]()
 
 This approach results to pretty much to the same as the [Character Controller](#character-controller) Move and SimpleMove. 
 
@@ -79,6 +85,7 @@ TODO: Differences between Translate and Position
 #### Translate
 
 [Transform.Translate() official documentation]()
+[Transoform - Translate implementation latest release]()
 
 TODO: Fix movement direction in script
 
@@ -91,6 +98,7 @@ TODO: Differences
 #### Position
 
 [Transform.position official documentation]()
+[Transoform - position implementation latest release]()
 
 Editing the Transform.position is a cheap action, but this implementation has pretty big drawbacks:
 
@@ -100,3 +108,16 @@ Editing the Transform.position is a cheap action, but this implementation has pr
 All these things you would either need to implement manually or use a different component to handle them for you.
 
 If you only ever need to move a player to a specifc direction some amount without needing to care about collisions or gravity etc. this is the most performant option.
+
+## Releases
+
+All the different types of controllers can be found as Unity packages from the releases page [Here](todo add the link).
+
+## Contribution
+
+If you wish to contribute to the project, you must follow these rules:
+1. When starting to work on a feature, create a new feature branch with a descriptive name using kebab-case. Ex. ```rigidbody-addforce-unit-tests```.
+2. When you are done working on your changes, merge main onto your branch and test that nothing is broken. This ensures that no merge conflicts should occur when creating your pull request. This saves a lot of time and headaches.
+3. Create a pull request to ```main``` for your changes to be review. Once the owner has approved your changes, you can merge in your changes. When creating pull request, please use descriptive titles and a give a brief summary of what it is you have done.
+
+Thank you for begin considerate! :)

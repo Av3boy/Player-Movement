@@ -2,6 +2,8 @@
 
 This repository contains different types of FPS player controller implementations.
 
+TODO: Releases in Asset Store?
+
 ## Table of Contents
 
 - [Project Structure](#project-structure)
